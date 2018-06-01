@@ -68,16 +68,16 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
+            {{--@if (Route::has('login'))--}}
+                {{--<div class="top-right links">--}}
+                    {{--@auth--}}
+                        {{--<a href="{{ url('/home') }}">Home</a>--}}
+                    {{--@else--}}
+                        {{--<a href="{{ route('login') }}">Login</a>--}}
+                        {{--<a href="{{ route('register') }}">Register</a>--}}
+                    {{--@endauth--}}
+                {{--</div>--}}
+            {{--@endif--}}
 
             <div class="content">
                 <div class="title m-b-md" >
@@ -86,9 +86,9 @@
 
                 <div class="links">
                     <a href="https://naver.com">About us</a>
-                    <a href="{{"businessUser_home"}}">Business Partner</a>
-                    <a href="https://naver.com">Kyomin Delivery</a>
-                    <a href="https://naver.com">log Mall</a>
+                    <a href="{{"businessUser_home"}}">해외이사</a>
+                    <a href="https://naver.com">개인택배</a>
+                    <a href="https://naver.com">사업자체결</a>
                     <a href="https://naver.com">Contact us</a>
                 </div>
             </div>
