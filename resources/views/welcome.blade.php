@@ -71,7 +71,7 @@
             {{--@if (Route::has('login'))--}}
                 {{--<div class="top-right links">--}}
                     {{--@auth--}}
-                        {{--<a href="{{ url('/home') }}">Home</a>--}}
+                        {{--<a href="{{ url('/home') }}">home</a>--}}
                     {{--@else--}}
                         {{--<a href="{{ route('login') }}">Login</a>--}}
                         {{--<a href="{{ route('register') }}">Register</a>--}}
@@ -85,11 +85,11 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://naver.com">About us</a>
-                    <a href="{{"businessUser_home"}}">해외이사</a>
-                    <a href="https://naver.com">개인택배</a>
-                    <a href="https://naver.com">사업자체결</a>
-                    <a href="https://naver.com">Contact us</a>
+                    <a href={{"home_aboutUs"}}>About us</a>
+                    <a href={{"home_moveOverseas"}}>해외이사</a>
+                    <a href={{"home_deliveryPrivate"}}>개인택배</a>
+                    <a href={{"home_contractBusiness"}}>사업제휴</a>
+                    <a href={{"home_contactUs"}}>Contact us</a>
                 </div>
             </div>
         </div>

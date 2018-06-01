@@ -15,6 +15,29 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/* Website for home*/
+
+Route::get('/home_aboutUs', function(){
+    return view('home.aboutUs');
+});
+
+Route::get('/home_moveOverseas', function(){
+    return view('home.moveOverseas');
+});
+
+Route::get('/home_deliveryPrivate', function(){
+    return view('home.deliveryPrivate');
+});
+
+Route::get('/home_contractBusiness', function(){
+    return view('home.contractBusiness');
+});
+
+Route::get('/home_contactUs', function(){
+    return view('home.contactUs');
+});
+
+
 Route::resource('delivery', 'DeliveryController');
 
 Route::get('businessUser', 'BusinessUserController@index');
